@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffd000">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#ffd000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#ffd000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffd000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="Safari">
+    <meta name="description" content="Contact for Website Development Freelance Projects"/>
+    <meta name="author" content="Rishi Bajpai"/>
+    <link rel="icon" href="assets/images/favicon.webp">
+    <link rel="shortcut icon" href="assets/images/favicon.webp">
+    <title>Rishi Bajpai</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nunito:wght@200&family=Quicksand:wght@300;700&family=Trispace:wght@100;300&display=swap" rel="stylesheet">
+
+    <!-- Font-Awesome-Icons-CSS -->
+    <!-- <link rel="stylesheet" href="assets/styles/fontawesome-all.min.css"> -->
+    <link href="assets/styles/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <body>
+
+        <main>
+            
+            <img data-aos="fade-up" data-aos-anchor-placement="top-bottom"class="logoimg" src="assets/images/logo.png" alt="Rishi Bajpai">
+
+            <div id="geometry-wrapper">
+                <img class="image3d tube" src="assets/images/illustrations/color tube.png" alt="random 3d shape">
+                <img class="image3d sphere-dis" src="assets/images/illustrations/spheredistressed.png" alt="random 3d shape">
+                <img class="image3d sphere-green" src="assets/images/illustrations/green speher.png" alt="random 3d shape">
+                <img class="image3d ring-moon" src="assets/images/illustrations/ring (1).png" alt="random 3d shape">
+                <img class="image3d sphere-dotted" src="assets/images/illustrations/dot sphere.svg" alt="random 3d shape">
+                <img class="image3d ring-purple" src="assets/images/illustrations/iso ring.svg" alt="random 3d shape">
+                <img class="image3d ring-orange" src="assets/images/illustrations/ring.png" alt="random 3d shape">
+                <img class="image3d ring-metal" src="assets/images/illustrations/metallic ring.svg" alt="random 3d shape">
+                <img class="image3d ring-blue" src="assets/images/illustrations/iso ring copy.svg" alt="random 3d shape">
+                <img class="image3d blue-sphere" src="assets/images/illustrations/blue sphere.svg" alt="random 3d shape">
+            </div>
+
+            <div id="content-wrapper">
+                <!-- Hero Section -->
+                <div id="hero">
+                    <div id="hero-section" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom">
+                        <div id="content">
+                            <p class="hello">Hello! I'm a,</p>
+                            <p class="tagline">
+                                <span class="name"></span>
+                            </p>
+                            <p class="text">
+                                I am a tech enthusiast with leadership capabilities who can give your project a right direction.
+                                In the last 2 years, I've helped businesses in everything from crafting their digital presence to 
+                                creating strategies for their products.
+                                <br><br>
+                                Don't think twice to bother me if you've any idea to discuss! <br>
+                            </p>
+                            <p class="text">
+                                <big><b>I'd love to discuss it! 😍</b></big>
+                            </p>
+                            <a href="" id="lead-cta">Download CV <i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div id="profile"  data-aos="zoom-in-up">
+                        <img class="image3d sphere-fintip" src="assets/images/illustrations/spheredistressed.png" alt="random 3d shape">
+                        <img class="heroimg" src="assets/images/illustrations/heroimg.png" alt="">
+                    </div>
+                </div>
+                
+                <!-- <div class="crunch-body">
+                    <div class="card">
+                        <div class="fold"></div>
+                        <div class="fold"></div>
+                        <div class="fold"></div>
+                        <div class="fold"></div>
+                        <div class="fold"></div>
+                    </div>
+                </div> -->
+
+            </div>
+
+            
+        </main>
+
+        <footer>
+
+        </footer>
+
+
+    <!-- ====================scripts==================== -->
+    
+    <!-- typed effect -->
+    <script src="assets/scripts/typed.min.js"></script>
+    <script>
+        var typed = new Typed('.name', {
+            strings: ["Frontend Developer", "UI/UX Designer", "Web Developer", "SEO Strategist"],
+            typeSpeed: 80,
+            backSpeed: 40,
+            showCursor: true,
+            loop: true,
+            cursorChar: '|',
+            backDelay: 2000
+        });
+    </script>
+
+    <script src="https://kit.fontawesome.com/37f2261772.js" crossorigin="anonymous"></script>
+    
+    <!-- common jquery plugin -->
+    <script src="assets/scripts/jquery-3.3.1.min.js"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- banner image moving effect -->
+    <script>
+        var lFollowX = 0,
+            lFollowY = 0,
+            x = 0,
+            y = 0,
+            friction = 1 / 30;
+
+        function animate() {
+            x += (lFollowX - x) * friction;
+            y += (lFollowY - y) * friction;
+
+            translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+
+            $('.banner-image').css({
+                '-webit-transform': translate,
+                '-moz-transform': translate,
+                'transform': translate
+            });
+
+            window.requestAnimationFrame(animate);
+        }
+
+        $(window).on('mousemove click', function (e) {
+
+            var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+            var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+            lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+            lFollowY = (10 * lMouseY) / 100;
+
+        });
+
+        animate();
+    </script>
+    <!-- //banner image moving effect -->
+
+    <!-- aos js -->
+    <script src="assets/scripts/aos.js"></script>
+    <script>
+        // Init AOS
+        function aos_init() {
+            AOS.init({
+            duration: 1000,
+            once: true
+            });
+        }
+        $(window).on('load', function() {
+            aos_init();
+        });
+    </script>
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
