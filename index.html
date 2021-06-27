@@ -21,6 +21,9 @@
     <link rel="shortcut icon" href="assets/images/favicon.webp">
     <title>Rishi Bajpai</title>
 
+    <link rel="preload" href="assets/styles/styles.min.css" as="style" media="screen" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/styles/styles.min.css" media="screen"></noscript>
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,10 +37,10 @@
 
         <main>
             
-            <img data-aos="fade-up" data-aos-anchor-placement="top-bottom"class="logoimg" src="assets/images/logo.png" alt="Rishi Bajpai">
+            <img data-aos="fade-up" data-aos-anchor-placement="top-bottom"class="logoimg" src="assets/images/logo.webp" alt="Rishi Bajpai">
 
             <div id="geometry-wrapper">
-                <img class="image3d tube" src="assets/images/illustrations/color tube.png" alt="random 3d shape">
+                <img class="image3d tube" src="assets/images/illustrations/color tube.webp" alt="random 3d shape">
                 <img class="image3d sphere-dis" src="assets/images/illustrations/spheredistressed.png" alt="random 3d shape">
                 <img class="image3d sphere-green" src="assets/images/illustrations/green speher.png" alt="random 3d shape">
                 <img class="image3d ring-moon" src="assets/images/illustrations/ring (1).png" alt="random 3d shape">
@@ -46,15 +49,15 @@
                 <img class="image3d ring-orange" src="assets/images/illustrations/ring.png" alt="random 3d shape">
                 <img class="image3d ring-metal" src="assets/images/illustrations/metallic ring.svg" alt="random 3d shape">
                 <img class="image3d ring-blue" src="assets/images/illustrations/iso ring copy.svg" alt="random 3d shape">
-                <img class="image3d blue-sphere" src="assets/images/illustrations/blue sphere.svg" alt="random 3d shape">
             </div>
 
             <div id="content-wrapper">
                 <!-- Hero Section -->
-                <div id="hero">
+                <div id="hero" class="blackglass">
                     <div id="hero-section" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom">
                         <div id="content">
-                            <p class="hello">Hello! I'm a,</p>
+                            <p class="hello">Heyy! Do you know?</p>
+                            <p class="hello">I can</p>
                             <p class="tagline">
                                 <span class="name"></span>
                             </p>
@@ -63,12 +66,12 @@
                                 In the last 2 years, I've helped businesses in everything from crafting their digital presence to 
                                 creating strategies for their products.
                                 <br><br>
-                                Don't think twice to bother me if you've any idea to discuss! <br>
+                                Don't think twice to bother me if you've any project idea! <br>
                             </p>
                             <p class="text">
                                 <big><b>I'd love to discuss it! 😍</b></big>
                             </p>
-                            <a href="" id="lead-cta">Download CV <i class="fas fa-download"></i></a>
+                            <a href="https://calendly.com/itsrishibajpai/30min" target="_blank" id="lead-cta">Schedule a Meeting <i class="fas fa-calendar-check"></i></a>
                         </div>
                     </div>
                     <div id="profile"  data-aos="zoom-in-up">
@@ -76,16 +79,149 @@
                         <img class="heroimg" src="assets/images/illustrations/heroimg.png" alt="">
                     </div>
                 </div>
-                
-                <!-- <div class="crunch-body">
-                    <div class="card">
-                        <div class="fold"></div>
-                        <div class="fold"></div>
-                        <div class="fold"></div>
-                        <div class="fold"></div>
-                        <div class="fold"></div>
+
+                <!-- ========= how i work section ========= -->
+                <div class="section-flat">
+                    <h2 class="flat-heading" data-aos="fade-right" data-aos-delay="100">
+                        How I work ?
+                    </h2>
+                    <div class="card-wrapper">
+                        <!-- ============== card row ============== -->
+                        <div class="card-row">
+                            <div class="card blackglass"  data-aos="zoom-in" data-aos-delay="100">
+                                <div class="icon bluie" data-aos="flip-up" data-aos-delay="400">
+                                    <i class="fas fa-code" style="color: #3fcdc7;"></i>
+                                </div>
+                                <h4 class="title">Clean Code</h4>
+                                <p class="description">
+                                    I am committed to write clean and efficient code that 
+                                    doesn't only save my time in debugging my code and pushing 
+                                    updates but also helps fellow developers to collaborate with me easily.
+                                </p>
+                            </div>
+                            <div class="card blackglass"  data-aos="zoom-in" data-aos-delay="200">
+                                <div class="icon pirplie" style="padding: 30px 35px;" data-aos="flip-up" data-aos-delay="400">
+                                    <i class="fas fa-code-branch" style="color: #bd8fe4;"></i>
+                                </div>
+                                <h4 class="title">Version Control</h4>
+                                <p class="description">
+                                    Version Control is the most important habit a developer
+                                    must follow in its day - to -day coding style. I have implemented it already in
+                                    my workflow. So, now I encourage others to apply this.
+                                </p>
+                            </div>
+                            <div class="card blackglass"  data-aos="zoom-in" data-aos-delay="300">
+                                <div class="icon orangie" style="padding: 30px 32px;" data-aos="flip-up" data-aos-delay="400">
+                                    <i class="fab fa-accessible-icon" style="color: #ff5714ff;"></i>
+                                </div>
+                                <h4 class="title">Accessibility</h4>
+                                <p class="description">
+                                    I try to implement the accessibility standards recommended by Google. As its a big concern nowadays to make our content accessible to all users regardless of their disabilities.
+                                </p>
+                            </div>         
+                            <div class="card blackglass"  data-aos="zoom-in" data-aos-delay="100">
+                                <div class="icon pinkie" data-aos="flip-up" data-aos-delay="400">
+                                    <i class="fas fa-users" style="color: #ff689b;"></i>
+                                </div>
+                                <h4 class="title">User Research</h4>
+                                <p class="description">
+                                    User is the centre of any design, it's a popular concept in 
+                                    <b>User Experience Design</b> and i always try to follow this 
+                                    concept to make my designs more User - Centric. 
+                                </p>
+                            </div>
+                            <div class="card blackglass"  data-aos="zoom-in" data-aos-delay="200">
+                                <div class="icon brownie" style="padding: 30px 32px;" data-aos="flip-up" data-aos-delay="400">
+                                    <i class="fas fa-book" style="color: #F3A712;"></i>
+                                </div>
+                                <h4 class="title">Quickly Adaptable</h4>
+                                <p class="description">
+                                    I am always open to learn and so I can quickly adapt in this rapidly evolving 
+                                    timeline as well as I also mentor my juniors very often if they're stuck somewhere in their journey to learn.
+                                </p>
+                            </div>
+                            <div class="card blackglass"  data-aos="zoom-in" data-aos-delay="300">
+                                <div class="icon greenie" style="padding: 30px 32px;" data-aos="flip-up" data-aos-delay="400">
+                                    <i class="fas fa-stopwatch" style="color: #61e786;"></i>
+                                </div>
+                                <h4 class="title">Time Management</h4>
+                                <p class="description">
+                                    I have delivered all my projects before deadline in the past 
+                                    and this shows my commitment towards my work. 
+                                    <br><br><b>Apologies for those I couldn't <big>😬 😅</big></b>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div> -->
+                </div>
+
+                <!-- ============== timeline design section ==============  -->
+                <div class="timeline">
+                    <h2 class="section-head">Education</h2>
+                    <label>Here's what I've studied so far...</label>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#fbfcfd8c" fill-opacity="1" d="M0,288L48,282.7C96,277,192,267,288,224C384,181,480,107,576,101.3C672,96,768,160,864,197.3C960,235,1056,245,1152,213.3C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                    </svg>
+                    <div class="box">
+                        <div class="container">
+                            <div class="lines">
+                                <div class="dot"></div>
+                                <div class="line"></div>
+                                <div class="dot"></div>
+                                <div class="line"></div>
+                                <div class="dot"></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="cards">
+                                <div class="card" data-aos="fade-right" data-aos-delay="100">
+                                    <h4 class="degree">Bachelors Of Technology - <span class="specialization">Information Technology</span></h4>
+                                    <p class="college">Bundelkhand Institute if Engineering & Technology Jhansi</p>
+                                    <p class="year">2019 - 2022</p>
+                                </div>
+                                <div class="card mid" data-aos="fade-right" data-aos-delay="200">
+                                    <h4 class="degree">Diploma - <span class="specialization">Computer Science & Engineering</span></h4>
+                                    <p class="college">Government Polytechnic Unnao</p>
+                                    <p class="year">2016 - 2019</p>
+                                </div>
+                                <div class="card" data-aos="fade-right" data-aos-delay="300">
+                                    <h4 class="degree">Intermediate</h4>
+                                    <p class="college">U.P. Board</p>
+                                    <p class="year">2015</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========= My Skills section ========= -->
+                <div class="section-flat">
+                    <h2 class="flat-heading" data-aos="fade-right" data-aos-delay="100">
+                        How I work ?
+                    </h2>
+                    <div class="card-wrapper">
+                        
+                    </div>
+                </div>
+
+                <div class="section-boxed blackglass">
+                    <h2 class="section-head">
+                        I'm good at
+                    </h2>
+                    <div class="block-container">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, odio veritatis. Maiores vero rerum possimus nobis iure voluptas, nesciunt distinctio aperiam praesentium deleniti quia iusto, voluptate, expedita dolores accusamus. Totam?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, odio veritatis. Maiores vero rerum possimus nobis iure voluptas, nesciunt distinctio aperiam praesentium deleniti quia iusto, voluptate, expedita dolores accusamus. Totam?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, odio veritatis. Maiores vero rerum possimus nobis iure voluptas, nesciunt distinctio aperiam praesentium deleniti quia iusto, voluptate, expedita dolores accusamus. Totam?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, odio veritatis. Maiores vero rerum possimus nobis iure voluptas, nesciunt distinctio aperiam praesentium deleniti quia iusto, voluptate, expedita dolores accusamus. Totam?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, odio veritatis. Maiores vero rerum possimus nobis iure voluptas, nesciunt distinctio aperiam praesentium deleniti quia iusto, voluptate, expedita dolores accusamus. Totam?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, odio veritatis. Maiores vero rerum possimus nobis iure voluptas, nesciunt distinctio aperiam praesentium deleniti quia iusto, voluptate, expedita dolores accusamus. Totam?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, odio veritatis. Maiores vero rerum possimus nobis iure voluptas, nesciunt distinctio aperiam praesentium deleniti quia iusto, voluptate, expedita dolores accusamus. Totam?</p>
+                    </div>          
+                </div>
+                
+                
+
+
+                                    
 
             </div>
 
@@ -101,75 +237,12 @@
     
     <!-- typed effect -->
     <script src="assets/scripts/typed.min.js"></script>
-    <script>
-        var typed = new Typed('.name', {
-            strings: ["Frontend Developer", "UI/UX Designer", "Web Developer", "SEO Strategist"],
-            typeSpeed: 80,
-            backSpeed: 40,
-            showCursor: true,
-            loop: true,
-            cursorChar: '|',
-            backDelay: 2000
-        });
-    </script>
-
+    <!-- ------fontawesome kit -------- -->
     <script src="https://kit.fontawesome.com/37f2261772.js" crossorigin="anonymous"></script>
-    
-    <!-- common jquery plugin -->
-    <script src="assets/scripts/jquery-3.3.1.min.js"></script>
-    <!-- //common jquery plugin -->
-
-    <!-- banner image moving effect -->
-    <script>
-        var lFollowX = 0,
-            lFollowY = 0,
-            x = 0,
-            y = 0,
-            friction = 1 / 30;
-
-        function animate() {
-            x += (lFollowX - x) * friction;
-            y += (lFollowY - y) * friction;
-
-            translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
-
-            $('.banner-image').css({
-                '-webit-transform': translate,
-                '-moz-transform': translate,
-                'transform': translate
-            });
-
-            window.requestAnimationFrame(animate);
-        }
-
-        $(window).on('mousemove click', function (e) {
-
-            var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
-            var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
-            lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
-            lFollowY = (10 * lMouseY) / 100;
-
-        });
-
-        animate();
-    </script>
-    <!-- //banner image moving effect -->
-
+    <!-- jquery -->
+    <script src="assets/scripts/jquery-3.3.1.min.js"></script> 
     <!-- aos js -->
     <script src="assets/scripts/aos.js"></script>
-    <script>
-        // Init AOS
-        function aos_init() {
-            AOS.init({
-            duration: 1000,
-            once: true
-            });
-        }
-        $(window).on('load', function() {
-            aos_init();
-        });
-    </script>
-
     <script src="assets/scripts/script.js"></script>
 </body>
 </html>
