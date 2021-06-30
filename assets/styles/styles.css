@@ -174,6 +174,7 @@ p{
 }
 .flat-heading{
     font-size: 6em;
+    margin-bottom: 20px;
     color: rgba(239, 189, 235, 0.3);
     -webkit-text-stroke: 2px #efbdebff;
     font-family: var(--quicksand);
@@ -230,8 +231,6 @@ p{
     margin-bottom: 10px;
     text-align: left;
 }
-
-
 .section-boxed{
     height: auto;
     width: 100%;
@@ -250,10 +249,16 @@ p{
 .block-container{
     padding: 40px;
 }
+.subhead {
+    font-family: var(--nunito);
+    font-size: 1.4em;
+    line-height: 22px;
+    /* identical to box height */
+    margin: 50px 60px;
+    color: #FFFFFF;
+}
 
-/* ------------------//////// timeline ////////---------------- */
-
-  
+/* ------------------//////// timeline design ////////---------------- */
 .timeline {
     width: 100%;
     max-width: 1350px;
@@ -276,13 +281,8 @@ p{
     -webkit-text-stroke: 2px rgb(255, 255, 255);
     font-family: var(--quicksand);
 }
-.timeline label {
-    font-family: var(--nunito);
-    font-size: 1.4em;
-    line-height: 22px;
-    /* identical to box height */
-    margin: 50px 88px 50px 88px;
-    color: #FFFFFF;
+.timeline .subhead{
+    margin-left: 88px;
 }
 .timeline .box {
     width: 100%;
@@ -361,6 +361,260 @@ p{
     color: #006644;
     font-weight: 600;
     margin-left: 25px;
+}
+
+/* ------------//////// skills section design ////////------------- */
+.skillsec{
+    margin-top: 100px;
+}
+.skillsec .flat-heading{
+    color: rgba(255, 87, 2, 0.15 );
+    -webkit-text-stroke: 2px rgb(255, 87, 20);
+}
+.difficulties{
+    margin: 20px 50px;
+    width: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px 60px;
+    border-radius: 20px;
+}
+.difficulties h3{
+    font-family: var(--nunito);
+}
+.exp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 25px;
+}
+.exp label{
+    margin-left: 15px;
+    letter-spacing: 2px;
+}
+.beginner{
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(75deg, rgb(0, 141, 35), rgb(71, 255, 141));
+    box-shadow: 3px 3px 15px rgba(21, 255, 118, 0.473);
+    border-radius: 50%;
+}
+.intermediate{
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(75deg, rgb(158, 63, 0), rgba(255, 166, 0, 0.706));
+    box-shadow: 3px 3px 15px rgba(255, 166, 0, 0.473);
+    border-radius: 50%;
+}
+.advanced{
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(75deg, rgb(0, 47, 255), rgba(0, 204, 255, 0.753));
+    box-shadow: 3px 3px 15px rgba(0, 204, 255, 0.753);
+    border-radius: 50%;
+}
+.skill-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1350px;
+    padding: 50px 0px;
+}
+.skill-card{
+    width: 350px;
+    margin: 0px 30px;
+    background: rgba(32, 32, 32, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(29, 29, 29, 0.37);
+    backdrop-filter: blur( 6.0px );
+    -webkit-backdrop-filter: blur( 6.0px );
+    border: 2px solid rgba(59, 59, 59, 0.5);
+    border-radius: 30px;
+}
+.skill-card:first-child{
+    margin-left: 50px;
+}
+.skill-card h2{
+    padding: 40px 40px 0px 40px;
+    font-family: var(--nunito);
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    color: #dda900;
+}
+.skill-list{
+    margin: 0;
+    margin-top: -3.5px;
+    padding: 40px;
+    background: rgba(46, 46, 46, 0.425);
+    border-radius: 0px 0px 30px 30px;
+}
+.skill-list .skill{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color: #bbb;
+    margin: 25px 0px;
+}
+.skill:first-child{
+    margin-top: -15px;
+}
+.skill-list .skill li{
+    list-style-type: none;
+    display: inline;
+}
+
+/* ------------------///////// projects design /////////----------------- */
+.prjsec .flat-heading{
+    color: rgba(243, 167, 18, 0.15);
+    -webkit-text-stroke: 2px rgb(243, 167, 18);
+}
+.slider{
+    width: 100%;
+    border: none;
+    min-height: 500px;
+    margin: 0px;
+    overflow: hidden;
+}
+.slider .slide{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    clip-path: circle(0% at 0 50%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider .slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+}
+.navigation{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.slider:hover .navigation{
+    opacity: 1;
+}
+.prev-btn, .next-btn{
+    margin: 20px;
+    z-index: 999;
+    font-size: 2em;
+    cursor: pointer;
+    color: #fff;
+}
+.mockupimg{
+    margin-top: -400px;
+    margin-left: 30px;
+}
+.project-contents{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: #111;
+}
+.prjcontent{
+    margin-top: -100px;
+    padding: 50px 20px;
+    font-family: var(--quicksand);
+}
+.prjtitle{
+    font-size: 4em;
+    font-weight: 700;
+    font-family: var(--quicksand);
+}
+.prjcontent span{
+    letter-spacing: 0.1rem;
+    margin-right: 20px;
+}
+.prjcat{
+    background: #222;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #111111d7;
+    padding: 12px 20px;
+    width: max-content;
+    color: #ddd;
+    margin: 20px 0px;
+}
+span.smalltitle{
+    font-weight: 600;
+    margin-right: 5px;
+}
+.prjskills{
+    font-family: var(--nunito);
+    font-weight: 400;
+    padding: 10px;
+    color: #000;
+    margin-top: 20px;
+}
+.prjdur{
+    font-weight: 600;
+    padding: 10px;
+    color: #000;
+}
+.abstract{
+    font-family: var(--nunito);
+    padding: 20px 10px;
+    max-width: 600px;
+    color: #000;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.05rem;
+    line-height: 1.6rem;
+}
+.elevatedmockup{
+    height: 520px;
+    margin-top: -300px;
+}
+.prjlink{
+    background: #111;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #111111d7;
+    padding: 15px 40px;
+    width: max-content;
+    color: #00b3ff;
+    margin-top: 40px;
+    text-decoration: none;
+}
+.prjlink:hover{
+    background: #00b3ff;
+    color: #111;
+    transition: 0.8s ease;
+    text-decoration: none;
+}
+
+/* ---- slider backgrounds ---- */
+.slide:nth-child(1){
+    background-image: url('../images/bgs/64.-Magic-Mint.jpg');
+}
+.slide:nth-child(2){
+    background-image: url('../images/bgs/19.-Can-Can_1.jpg');
+}
+.slide:nth-child(3){
+    background-image: url('../images/bgs/11.-Fuchsia_1.jpg');
+}
+.slide:nth-child(4){
+    background-image: url('../images/bgs/50.-Columbia-Blue.jpg');
+}
+.slide:nth-child(5){
+    background-image: url('../images/bgs/12.-Tumbleweed_1.jpg');
+}
+.slide:nth-child(6){
+    background-image: url('../images/bgs/99.-Roman.jpg');
+}
+.slide:nth-child(7){
+    background-image: url('../images/bgs/64.-Magic-Mint.jpg');
+}
+.slide:nth-child(8){
+    background-image: url('../images/bgs/38.-Sky-Blue_1.jpg');
 }
 
 
@@ -503,6 +757,15 @@ p{
     border-radius: 10px;
     border: 1px solid rgba(255, 191, 63, 0.3);
     color: rgb(243, 167, 18);
+}
+.purpleglass{
+    background: rgba(239, 216, 255, 0.219);
+    box-shadow: 0 8px 12px 0 rgba(97, 0, 167, 0.24);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 2px solid rgba(200, 121, 255, 0.3);
+    color: rgb(200, 121, 255);
 }
 
 /* ===================== animation keyframes ======================== */
