@@ -111,6 +111,7 @@ p{
     color: #fff;
     letter-spacing: 0.1em;
     margin: 10px 0px;
+    font-family: var(--quicksand);
 }
 .tagline{
     font-size: 3em;
@@ -220,6 +221,7 @@ p{
     line-height: 1.4em;
     margin-bottom: 10px;
     text-align: left;
+    font-family: var(--quicksand);
 }
 .section-boxed{
     height: auto;
@@ -383,6 +385,7 @@ p{
 .exp label{
     margin-left: 15px;
     letter-spacing: 2px;
+    font-family: var(--quicksand);
 }
 .beginner{
     width: 15px;
@@ -447,6 +450,7 @@ p{
     justify-content: space-between;
     font-size: 1rem;
     letter-spacing: 0.1rem;
+    font-family: var(--quicksand);
     color: #bbb;
     margin: 25px 0px;
 }
