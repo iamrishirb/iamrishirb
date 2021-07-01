@@ -15,7 +15,6 @@
 
     /* ------ Font variables ------ */
     --quicksand: 'Quicksand', sans-serif;
-    --monotype : 'Major Mono Display', monospace;
     --nunito: 'Nunito', sans-serif;
     --trispace: 'Trispace', sans-serif;
 
@@ -25,13 +24,6 @@
     --rounded-text: var(--quicksand);
 
     /* ------- font sizes ------ */
-    --h1-lg: 2.2rem;
-    --h1-sm: 2rem;
-    --h1-xs: 1.8rem;
-    --h2-lg: 1.8rem;
-    --h2-sm: 1.6rem;
-    --h2-xs: 1.2rem;
-    --p-all: 1rem;
 
     /* breakpoints */
     --large: 1440px;
@@ -47,6 +39,7 @@
 body{
     background: var(--background);
     color: var(--text-color);
+    font-family: var(--quicksand);
     height: 2000px; 
     overflow-x: hidden;                                                                                                                                                                                                                                   ;
 }
