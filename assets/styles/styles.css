@@ -1504,6 +1504,9 @@ span.smalltitle{
 }
 
 @media screen and (max-width: 620px) {
+    main{
+        overflow-x: hidden;
+    }
     /* reset shapes */
     .tube{
         width: 150px;
@@ -1709,6 +1712,7 @@ span.smalltitle{
 }
 
 @media screen and (max-width: 475px) {
+    
     /* reset shapes */
     .tube{
         width: 120px;
