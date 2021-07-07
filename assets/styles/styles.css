@@ -282,7 +282,7 @@ p{
     height: auto;
     padding: 20px;
     background: #fbfcfd8c;
-    margin-top: -3.5px;
+    margin-top: -3.7px;
 }
 .timeline .box .container {
     width: 100%;
@@ -439,7 +439,7 @@ p{
 }
 .skill-list{
     margin: 0;
-    margin-top: -3.5px;
+    margin-top: -3.7px;
     padding: 40px;
     background: rgba(46, 46, 46, 0.425);
     border-radius: 0px 0px 30px 30px;
@@ -463,6 +463,9 @@ p{
 }
 
 /* ------------------///////// projects design /////////----------------- */
+.prjsec{
+    margin: 80px 0px;
+}
 .prjsec .flat-heading{
     margin-top: 50px;
     color: rgba(243, 167, 18, 0.15);
@@ -490,7 +493,8 @@ p{
     transition: 2s;
 }
 .navigation{
-    height: 500px;
+    height: 1000px;
+    margin: 0px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -505,22 +509,44 @@ p{
     z-index: 999;
     font-size: 2em;
     cursor: pointer;
-    color: #fff;
+    color: #000;
+}
+.prev-btn {
+    margin: 5px;
+    font-size: 1.5em;
+    background: #ffd000;
+    color: #000;
+    padding: 10px 16px 10px 14px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(24, 24, 24, 0.7);
+}
+.next-btn {
+    margin: 5px;
+    font-size: 1.5em;
+    background: #ffd000;
+    color: #000;
+    padding: 10px 14px 10px 16px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(24, 24, 24, 0.7);
+}
+.prev-btn:hover, .next-btn:hover{
+    background: #000;
+    color: #ffd000;
 }
 .mockupimg{
-    margin-top: -400px;
+    margin-top: -300px;
     margin-left: 30px;
+    height: 600px;
 }
 .project-contents{
     display: flex;
-    /* height: 450px; */
+    padding-bottom: 20px;
     align-items: flex-start;
     justify-content: space-evenly;
     flex-wrap: wrap;
     color: #111;
 }
 .prjcontent{
-    margin-top: -100px;
     padding: 50px 20px;
     font-family: var(--quicksand);
 }
@@ -534,11 +560,12 @@ p{
     margin-right: 20px;
 }
 .prjcat{
+    width: fit-content;
+    text-align: center;
     background: #222;
     border-radius: 8px;
     box-shadow: 5px 5px 10px #111111d7;
     padding: 12px 20px;
-    width: max-content;
     color: #ddd;
     margin: 20px 0px;
 }
@@ -650,12 +677,12 @@ span.smalltitle{
     font-family: var(--quicksand);
 }
 .experience .box{
-    margin-top: -2.7px;
+    margin-top: -3.7px;
 }
 
 /* --------------////////////// certification /////////////--------------- */
 .certification{
-    margin-top: 450px;
+    /* margin-top: 450px; */
 }
 .certification .flat-heading{
     -webkit-text-stroke: 2px #EEE4E1;
@@ -683,7 +710,7 @@ span.smalltitle{
     width: 260px;
     padding: 5px;
     margin-left: 10px;
-    border: 2px solid #88ffd785;
+    /* border: 2px solid #88ffd785; */
 }
 .certi-desc p{
     margin: 8px 0px;
@@ -715,6 +742,7 @@ span.smalltitle{
 /* --------------////////////// resume download /////////////--------------- */
 .center-section{
     margin-top: 50px;
+    margin-bottom: -50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -757,9 +785,9 @@ span.smalltitle{
 #footer{
     width: 100%;
     height: auto;
-    max-width: 1350px;
-    margin: 30px auto;
-    border-radius: 100px 60px 60px 60px;
+    /* max-width: 1350px; */
+    /* margin: 30px auto;
+    border-radius: 100px 60px 60px 60px; */
     background: url('../images/bgs/20.-Melanie.jpg');
     background-size: cover;
     background-position: center;
@@ -792,13 +820,15 @@ span.smalltitle{
     bottom: 30px;
     padding: 15px 0px;
     text-align: center;
+    background: rgba(0, 0, 0, 0.726);
+    border-top: 2px solid #222;
 }
 .copyright .footer-text{
     font-family: var(--nunito);
     font-weight: 400;
     letter-spacing: 0.05rem;
     font-size: 0.9rem;
-    color: #000;
+    color: #ccc;
 }
 
 /* ------------------------------------------------------
@@ -1200,6 +1230,12 @@ span.smalltitle{
     }
 }
 
+@media screen and (max-width: 1030px){
+    .navigation{
+        height: 1200px;
+    }
+}
+
 @media screen and (max-width: 980px){
     .skill-wrapper{
         flex-direction: column;
@@ -1244,11 +1280,16 @@ span.smalltitle{
     }
     .prjcontent{
         width: 100%;
+        padding: 40px 0px;
     }
     .prjtitle{
         text-align: center;
+        font-size: 3em;
     }
     .prjdur{
+        text-align: center;
+    }
+    .prjskills{
         text-align: center;
     }
     .abstract{
@@ -1256,13 +1297,11 @@ span.smalltitle{
     }
     #hshut{
         margin-top: -350px;
-        height: 600px;
+        margin-left: -30px;
+        height: 550px;
     }
     .hshutblock{
         margin-top: -50px;
-    }
-    .certification{
-        margin-top: 600px;
     }
     .cert{
         height: 160px;
@@ -1397,6 +1436,9 @@ span.smalltitle{
     .flat-heading, .section-head{
         font-size: 3.5em;
     }
+    .flat-heading{
+        margin-left: 0px;
+    }
     .card{
         padding: 30px;
         width: fit-content;
@@ -1448,15 +1490,15 @@ span.smalltitle{
     .footerlinks i{
         margin-right: 15px;
     }
+    .navigation{
+        height: 1100px;
+    }
 }
 
 @media screen and (max-width: 820px) {
     .logoimg{
         width: 320px;
         margin: 15px;
-    }
-    .certification{
-        margin-top: 600px;
     }
     .certification .flat-heading{
         text-align: center;
@@ -1507,7 +1549,7 @@ span.smalltitle{
     /* reset shapes */
     .tube{
         width: 150px;
-        top: 30px;
+        top: 3000px;
         right: -10px;
     }
     .sphere-dis{
@@ -1654,6 +1696,7 @@ span.smalltitle{
         height: 180px;
     }
     .mockupimg{
+        height: 500px;
         margin-top: -250px;
     }
     .prjsec .flat-heading{
@@ -1706,14 +1749,17 @@ span.smalltitle{
     .footerlinks i{
         margin-right: 15px;
     }
+    .navigation{
+        height: 1100px;
+    }
 }
 
 @media screen and (max-width: 475px) {
     
     /* reset shapes */
     .tube{
-        width: 120px;
-        top: 30px;
+        width: 150px;
+        top: 3000px;
         right: -10px;
     }
     .sphere-dis{
@@ -1759,7 +1805,7 @@ span.smalltitle{
     }
     .blue-sphere{
         width: 300px;
-        top: 7780px;
+        top: 7620px;
         right: -4%;    
     }
     .logoimg{
@@ -1802,9 +1848,13 @@ span.smalltitle{
     }
     .resumebtn{
         text-align: center;
+        text-align: center;
+        margin-left: 0px;
     }
     .flat-heading, .section-head{
         font-size: 2.5em;
+        text-align: center;
+        margin-left: 0px;
     }
     .timeline .section-head{
         font-size: 2.5em;
@@ -1851,13 +1901,13 @@ span.smalltitle{
         margin-left: 30px;
     }
     .timeline .box .container .cards {
-        margin-left: 5px;
+        margin-left: 0px;
     }
     .timeline .box .container .cards .card {
-        width: 100%;
+        width: 80%;
         height: auto;
         padding: 15px;
-        margin-bottom: 30px;
+        margin: 15px auto;
     }
     .timeline .box .container .cards .card .degree {
         font-family: var(--trispace);
@@ -1876,7 +1926,245 @@ span.smalltitle{
         line-height: 1.1em;
         margin-left: 10px;
     }
-    .certification{
-        margin-top: 620px;
+    .skill-list{
+        margin-top: -4.7px;
+    }
+
+    .timeline .box .container .lines{
+        visibility: hidden;
+        display: none;
+    }
+    .timeline .box .container .lines .dot{
+        visibility: hidden;
+        display: none;
+    }
+    .degree{
+        font-size: 1em;
+    }
+    .timeline .box .container .cards .card .college {
+        font-size: 0.9em;
+        line-height: 1.3em;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    #hshut{
+        margin-top: -270px;
+        margin-left: -20px;
+    }
+    .prjtitle{
+        font-size: 2.4em;
+    }
+    .prev-btn {
+        margin: 5px;
+        font-size: 1.5em;
+        background: #ffd000;
+        color: #000;
+        padding: 10px 16px 10px 14px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px rgba(24, 24, 24, 0.7);
+    }
+    .next-btn {
+        margin: 5px;
+        font-size: 1.5em;
+        background: #ffd000;
+        color: #000;
+        padding: 10px 14px 10px 16px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px rgba(24, 24, 24, 0.7);
+    }
+    .prev-btn:hover, .next-btn:hover{
+        background: #000;
+        color: #ffd000;
+    }
+    .heading-center {
+        font-size: 2em;
+    }
+    .center-section{
+        margin: 40px 0px;
+    }
+    .center-section .subhead{
+        font-size: 1em;
+        line-height: 1.6em;
+        padding: 20px;
+    }
+    .resumebtn{
+        font-size: 1em;
+        padding: 15px 30px;
+        margin-top: 0px;
+        border: 1px solid rgba(239, 189, 235, 0.5);
+    }
+}
+
+@media screen and (max-width: 380px){
+    .sphere-dotted{
+        top: 1550px;
+    }
+    .heroimg{
+        height: 320px;
+        margin-top: 80px;
+        margin-left: 2%;
+    }
+    .card-wrapper {
+        margin-top: 80px;
+    }
+    .card-row, .card{
+        padding: 20px;
+    }
+    .card .icon {
+        margin-top: -69px;
+    }
+    .hello{
+        font-size: 1em;
+    }
+    .tagline{
+        font-size: 1.6em;
+        line-height: 1.4em;
+        margin-top: 0px;
+    }
+    .text{
+        margin-top: 40px;
+        font-size: 0.9em;
+    }
+    .ring-moon{
+        top: 4300px;
+    }
+    #hero, .timeline{
+        border-radius: 20px;
+    }
+    .flat-heading{
+        margin-left: 10px;
+        font-size: 2.2em;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .skillsec .flat-heading {
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+    .exp label {
+        margin-left: 5px;
+        font-size: 1em;
+    }
+    .difficulties h3 {
+        font-size: 1.2em;
+        margin: 10px 5px;
+    }
+    .difficulties {
+        margin: 20px auto;
+    }
+    .timeline .box .container .lines{
+        visibility: hidden;
+        display: none;
+    }
+    .timeline .box .container .lines .dot{
+        visibility: hidden;
+        display: none;
+    }
+    .degree{
+        font-size: 1em;
+    }
+    .timeline .box .container .cards .card .college {
+        font-size: 0.9em;
+        line-height: 1.3em;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .mockupimg{
+        height: 380px;
+        margin-top: -200px;
+    }
+    #hshut{
+        height: 380px;
+        margin-top: -250px;
+        margin-left: -20px;
+    }
+    .navigation{
+        height: 1100px;
+        margin: 0px;
+    }
+    .prjtitle{
+        font-size: 2em;
+    }
+    .prjcat{
+        font-size: 0.8em;
+        line-height: 1.8em;
+    }
+    .prjskills{
+        font-size: 1em;
+    }
+    .prjcontent{
+        font-size: 1em;
+    }
+    .prev-btn, .next-btn {
+        margin: 5px;
+        font-size: 1em;
+        background: #000;
+        color: #fff;
+        padding: 10px;
+    }
+    .cert-title{
+        font-size: 1.4em;
+    }
+    .certi-spec{
+        font-size: 1em;
+    }
+    .certi-desc, .year{
+        padding: 4px 0px;
+        font-size: 0.9em;
+    }
+    .heading-center{
+        font-size: 1.8em;
+    }
+    .center-section{
+        margin: 40px 0px;
+    }
+    .center-section .subhead{
+        font-size: 1em;
+        line-height: 1.4em;
+        padding: 10px;
+    }
+    .resumebtn{
+        font-size: 1em;
+        padding: 15px 30px;
+        margin-top: 20px;
+        border: 1px solid rgba(239, 189, 235, 0.5);
+    }
+    .timeline .box .container .cards .card{
+        margin: 15px auto;
+        width: 90%;
+        padding: 15px 0px 15px 15px;
+        margin-left: 0px;
+    }
+    .skill-wrapper{
+        padding: 10px 0px;
+    }
+    .skill-card h2 {
+        margin-top: 20px;
+        padding: 30px 30px 0px 30px;
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+    }
+    .skill-list {
+        margin: 0;
+        margin-top: -4.7px;
+        padding: 20px;
+        background: rgba(46, 46, 46, 0.425);
+        border-radius: 0px 0px 30px 30px;
+    }
+    .skill-list .skill {
+        font-size: 1rem;
+        color: #eee;
+    }
+    #footer .center-text {
+        display: block;
+        margin: 10px;
+        width: 100%;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .footerlinks {
+        font-size: 1em;
+        margin: 3px 0px;
+        display: block;
     }
 }
